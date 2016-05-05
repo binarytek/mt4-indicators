@@ -24,11 +24,9 @@ void OnChartEvent(const int id,
    
    if (id == CHARTEVENT_KEYDOWN) {
       if (lparam == getKeyCode(zoomInKey)) {
-         Print("ZOOM IN");
          keybd_event(187,0,0,0); //+ button
       }
       if (lparam == getKeyCode(zoomOutKey)) {
-         Print("ZOOM OUT");
          keybd_event(189,0,0,0); //- button
       }
    }
