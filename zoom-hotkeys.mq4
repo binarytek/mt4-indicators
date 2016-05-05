@@ -15,7 +15,7 @@ void keybd_event(int bVk,int bScan,int dwFlags,int dwExtraInfo);
 
 input string note = ""; // Enter only one character to customize the keys for zooming
 input string zoomInKey = "q";
-input string zoomOutKey = "r";
+input string zoomOutKey = "e";
 
 void OnChartEvent(const int id,
                   const long &lparam,
