@@ -32,32 +32,8 @@ void OnChartEvent(const int id,
    }
 }
 
+// Keycodes: http://help.adobe.com/en_US/AS2LCR/Flash_10.0/help.html?content=00000520.html
 int getKeyCode(string val) {
-   if (val == "a") return 65;
-   if (val == "b") return 66;
-   if (val == "c") return 67;
-   if (val == "d") return 68;
-   if (val == "e") return 69;
-   if (val == "f") return 70;
-   if (val == "g") return 71;
-   if (val == "h") return 72;
-   if (val == "i") return 73;
-   if (val == "j") return 74;
-   if (val == "k") return 75;
-   if (val == "l") return 76;
-   if (val == "m") return 77;
-   if (val == "n") return 78;
-   if (val == "o") return 79;
-   if (val == "p") return 80;
-   if (val == "q") return 81;
-   if (val == "r") return 82;
-   if (val == "s") return 83;
-   if (val == "t") return 84;
-   if (val == "u") return 85;
-   if (val == "b") return 86;
-   if (val == "w") return 87;
-   if (val == "x") return 88;
-   if (val == "y") return 89;
-   if (val == "z") return 90;
-   else return 65;
+   StringToUpper(val);
+   return StringGetChar(val, 0);
 }
